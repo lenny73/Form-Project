@@ -1,0 +1,791 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+font-family: 'Mandali', sans-serif;
+}
+/* create horizontal navigation bar */
+.navbar {
+  font-size: 18px;
+  background-image: linear-gradient(260deg, rgb(199, 201, 204, 0.5) 0%, rgb(239, 241, 244, 0.5) 100%);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 10px;
+}
+
+.main-nav {
+  list-style-type: none;
+}
+
+.nav-links,
+.logo {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.logo {
+  display: inline-block;
+  /* opacity: 0.6; */
+}
+.search{
+  text-decoration: none;
+  color: rgb(142, 5, 5, 0.9);
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: rgba(255, 255, 255);
+  font-size: 24px;
+}
+
+.log {
+  float: right;
+  width: 35%;
+  height: 150px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.active {
+  display: block;
+}
+/* create burger button */
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 57px;
+    width: 100%;
+  }
+
+  .main-nav {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .nav-links {
+    margin-left: 40px;
+    color: rgb(142, 5, 5);
+  }
+
+  .logo {
+    width: 134px;
+    border-radius: 10px;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .logo:hover,
+  .nav-links:hover {
+    color: rgba(255, 255, 255);
+  }
+
+  .main-nav input[type=text], input[type=password] {
+    width: 52%;
+    padding: 8px 0px;
+    margin: 10px 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #ebf0f4;
+  }
+
+  .btn {
+    background-color: #ebf0f4;
+    font-size: 20px;
+    color: rgb(142, 5, 5, 0.9);
+    padding: 5px 15px;
+    margin: 8px 0;
+    */ border: none;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+
+  .btn :hover {
+    opacity: 0.8;
+  }
+}
+/*  backgroung image*/
+header {
+  background-image: url('images/main.jpg');
+    /*, linear-gradient(rgba(0, 0.1, 0.2, 0.2), rgba(0, 0, 0, 0.5)); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 322px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: relative;
+}
+
+.welcome {
+  margin-top: 10em;
+  position: absolute;
+  width: 79%;
+  /* filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale, src='../images/welcome.png'); */
+  background-image: url('../images/welcome.png');
+}
+h1 {
+  position: absolute;
+  font-size: 3em;
+  margin-left: 2em;
+  margin-top: 1.5em;
+  color: rgb(239, 244, 244);
+  font-family: 'Merriweather', serif;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.8);
+
+}
+/* create form */
+legend{
+  color:#f7d4d4;
+
+}
+.Apply::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.main::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.apply {
+  position: fixed;
+  text-align: center;
+}
+fieldset {
+  padding: : 10px;
+}
+#fname {
+  width: 30%;
+  margin-left: 20px;
+  padding: 5px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+#lname {
+  width: 30%;
+  margin-left: 20px;
+  padding: 5px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+#phone {
+  width: 30%;
+  margin-left: 20px;
+  padding: 5px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+#address {
+  width: 30%;
+  margin-left: 20px;
+  padding: 5px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+#city {
+  width: 30%;
+  margin-left: 20px;
+  padding: 5px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+#state {
+  width: 25%;
+  margin-left: 20px;
+  padding: 0px, 0px, 0px, 0px;
+  padding: 5px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+#country {
+  width: 17%;
+  margin-left: 10px;
+  padding: 5px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+#gender {
+  margin-left: 20px;
+  border: 2px solid blue;
+  padding: 2px;
+}
+.school{
+  width: 30%;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.major{
+  float:left;
+  width: 30%;
+  margin-left: 10px;
+  font-size: 13px;
+  font-family: sans-serif;
+  color: white;
+  line-height: 24px;
+  padding: 4px;
+
+}
+.time{
+  margin-left: 10px;
+  font-size: 13px;
+  font-family: sans-serif;
+  color: white;
+  line-height: 24px;
+  padding: 4px;
+}
+/* validate input */
+.required:after{
+  content:"*";
+  font-weight:bold;
+  color:#c41515
+}
+input:invalid{
+  background-color: #dcd0f2;
+  border: 2px solid #aa8094;
+}
+input:valid {
+  background-color: #ddffdd;
+}
+#zip input:invalid{
+  background-color: #aa8094;
+}
+#zip {
+  margin-left: 10px;
+  width: 15%;
+  padding: 5px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+#browse{
+  margin-left: 10px;
+  width: 42%;
+  padding: 5px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  /* margin-top: 6px;
+  margin-bottom: 16px; */
+
+}
+#date{
+  margin-left: 20px;
+  padding: 5px;
+  width: 170px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: 'Josefin Sans' ,sans-serif;
+}
+.button{
+  padding: 7px 10px 7px 10px;
+  border: 2px solid #8e6d6d;
+  border-radius: 3px;
+  background-color: #f28585;
+  margin: 2px 17px 10px 2px;
+
+
+}
+h2{
+  text-align: center;
+  margin: 40px;
+  padding-top: 58px;
+  font-size: 30px;
+}
+.row {
+  display: flex;
+  /* flex-wrap: row wrap; */
+  flex-direction: row-reverse;
+  /* width: 100%; */
+}
+h3,h4,h5{
+  text-align: center;
+  padding-top: 15px;
+}
+
+.status{
+  margin-left: 20px;
+}
+.m{
+  float:left;
+  width: 30%;
+  padding: 2px;
+  margin-left: 10px;
+
+}
+.box{
+  float:left;
+  width: 48%;
+  height:1245px;
+  padding: 2%;
+}
+select {
+  width: 10%;
+  padding: 5px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+.credit {
+  font-size: 14px;
+  color: #a3728c;
+}
+#calendar{
+  width: 10%;
+  margin-left: 20px;
+  padding: 0px, 0px, 0px, 0px;
+  padding: 5px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+/* Slider of credits */
+p{
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.slidecontainer {
+  width: 50%;
+
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #252e77;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background:#252e77;
+  cursor: pointer;
+}
+
+textarea {
+  width: 70%;
+  height: 100px;
+  padding: 5px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  /* box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 10px;
+  /* resize: horizontal; */
+}
+/* craete login pop up menu with password */
+.multiselect {
+  width: 10%;
+  margin-left: 20px;
+}
+
+.selectBox {
+  position: relative;
+}
+
+.selectBox select {
+  width: 260%;
+  font-weight: bold;
+}
+
+.overSelect {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+/* toggle citizen button  */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slide {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slide:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slide {
+  background-color: #2196F3;
+}
+
+input:focus + .slide {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slide:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slide.round {
+  border-radius: 34px;
+}
+
+.slide.round:before {
+  border-radius: 50%;
+}
+
+input[type=text], input[type=password], input[type=email] {
+  width: 100%;
+  padding: 10px 10px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background-color: #ebf0f4;
+}
+
+/* Set a style for all buttons */
+#login_btn {
+  background-color: #ebf0f4;
+  color: rgb(142, 5, 5, 0.9);
+  padding: 10px 30px;
+  border: none;
+  border-radius: 2px;
+  margin-left: 90%;
+  font-size: 20px;
+  position: absolute;
+}
+
+#login_btn :hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn.submit {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  /* position: relative; */
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  /* 5% from the top, 15% from the bottom and centered */
+  background-image: linear-gradient(rgba(0, 0.1, 0.2, 0.2), rgba(0, 0, 0, 0.5)), url(images/grade.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* height: 130%; */
+  border: 1px solid #888;
+  width: 30%;
+  /* Could be more or less, depending on screen size */
+}
+
+label {
+  color: white;
+  font-size: 13px;
+}
+
+/* The Close Button (x) */
+.close {
+  /* position: absolute; */
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+/*
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0)
+  }
+
+  to {
+    -webkit-transform: scale(1)
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+} */
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+/* create gradient background with using keyframe */
+.box {
+
+  margin: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: linear-gradient(-45deg, #e6eaf2, #d4e0f9, #23A6D5, #91a0bf);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+}
+
+.main{
+  width: 97%;
+  margin:10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: linear-gradient(-45deg, #e6eaf2, #d4e0f9, #e6eaf2, white);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+.content{
+  float: left;
+  width: 65%;
+
+}
+.contentmenu{
+  float: left;
+  width: 25%;
+
+}
+/* Add styles to the form container */
+.login-menu{
+  max-width: 300px;
+}
+
+/* Full-width input fields */
+.login-menu input[type=text], .login-menu input[type=password] .login-menu input[type=email]{
+  width: 100%;
+  /* padding: 15px;
+  margin: 5px 0 22px 0; */
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.login-menu input[type=text]:focus, .login-menu input[type=password]:focus .login-menu input[type=email]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.login-menu .btn {
+  background-color: #23A6D5;
+  color: white;
+  /* padding: 16px 20px; */
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  /* margin-bottom:10px; */
+  opacity: 0.8;
+}
+
+/* Add a background color to the cancel button */
+.login-menu .cancel {
+  background-color:#627687;
+}
+
+/* Add some hover effects to buttons */
+.login-menu .btn:hover, .open-button:hover {
+  opacity: 1;
+}

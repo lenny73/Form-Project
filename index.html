@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <title>Leonid Suchkov</title>
+  <link rel="stylesheet" href="styleform.css" title="Default Style" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Mandali&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli|Playfair+Display" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="rb_formsubmit.js"></script>
+</head>
+
+<header>
+  <nav class="navbar">
+    <span class="navbar-toggle" id="js-navbar-toggle">
+      <i class="fa fa-bars"></i>
+    </span>
+    <a href="index.html" class="logo"><img src="images/stantfordLogo.png" alt="logo" class="logo"></a>
+    <ul class="main-nav" id="js-menu">
+
+      <!-- <li><a href="https://www.breitbart.com/" class="nav-links">Majors</a>
+      </li> -->
+      <li><a href="#form" class="nav-links" target="_blank">Apply</a>
+      </li>
+      <li><a href="https://www.stanford.edu/" target="_blank" class="nav-links">About</a>
+      </li>
+      <li><a href="https://www.stanford.edu/" target="_blank" class="nav-links">Contact</a>
+      </li>
+      <li><a href="https://www.stanford.edu/about/" target="_blank" class="nav-links">Blog</a>
+      </li>
+      <li>
+        <form action="http://www.google.com">
+          <input type="text" placeholder="Search.." name="search" class="nav-links">
+          <button class="btn" type="submit" value="search">Search</button>
+
+        </form>
+      </li>
+    </ul>
+  </nav>
+
+  <h1>Welcome To</h1>
+  <img src="images/welcome.png" alt="logo" class="welcome">
+  <!-- <button id="login_btn" onclick="document.getElementById('log').style.display='block'">Login</button>
+  <div id="log" class="modal">
+
+    <form class="modal-content animate" action="/action_page.php">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('log').style.display='none'" class="close" title="Close Modal">&times;</span>
+      </div>
+
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <button class="submit" type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+        <button type="button" onclick="document.getElementById('log').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div> -->
+
+    </form>
+  </div>
+</header>
+
+<body>
+
+
+  <div class="wrap">
+    <div class="Apply" id="form">
+      <div class="main">
+
+        <div class="content">
+          <h2>Apply To Us</h2>
+          <h3>University Enrollment Form</h3>
+          <h4>Please fill in your details below.</h4>
+        </div>
+
+        <div class="contentmenu">
+          <form action="mailto:someone@example.com" class="login-menu" method="post" >
+            <h2>Login</h2>
+
+            <label for="email"><b>Email</b></label>
+            <input type="email" placeholder="Enter Email" name="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit" class="btn" onclick="myFunction()">Login</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          </form>
+        </div>
+      </div>
+      <form id="application" action="mailto:someone@example.com" method="post" enctype="text/plain" >
+
+        <div class="box">
+          <fieldset id="info">
+            <legend>
+              <h3>Student Information:</h3>
+            </legend>
+            <p>
+              Select Dates:
+            </p>
+            <div class="date">
+              <select id="calendar" name="" class="" aria-required="true" required>
+                <option value=""> </option>
+                <option value="Jan">Jan</option>
+                <option value="Feb">Feb</option>
+                <option value="Mar">Mar</option>
+                <option value="Apr">Apr</option>
+                <option value="May">May</option>
+                <option value="Jun">Jun</option>
+                <option value="Jul">Jul</option>
+                <option value="Aug">Aug</option>
+                <option value="Sep">Sep</option>
+                <option value="Oct">Oct</option>
+                <option value="Nov">Nov</option>
+                <option value="Dec">Dec</option>
+              </select>
+              <select id="calendar" name="" class="" aria-required="true" required>
+                <option value=""> </option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+              </select>
+              <select id="calendar" name="" class="" aria-required="true" required>
+                <option value=""> </option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+              </select>
+              <img class="calendar" src="https://realdata.formstack.com/forms/images/2/calendar.png" alt="Select Date" title="Select Date" aria-hidden="true"><span class="required"></span></div>
+
+
+
+            <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+            <label for="fname">First Name<span class="required"></span></label><br>
+
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+            <label for="lname">Last Name<span class="required"></span></label><br>
+
+            <input type="tel" id="phone" name="phone" placeholder="(nnn)nnn-nnnn" pattern="[\(]\d{3}[\)]\d{3}[\-]\d{4}" required>
+            <label for="lname">Phone<span class="required"></span></label><br>
+
+            <input type="email" id="phone" name="email" placeholder="Your Email.." required>
+            <label for="lname">Email<span class="required"></span></label><br>
+            <p>Address</p>
+            <input type="text" id="address" name="address" placeholder="Your Address.." required>
+            <input type="text" id="lname" name="city" placeholder="Brooklyn" required>
+            <label for="lname">City<span class="required"></span></label>
+            <select id="state" value="New York "name="state" placeholder="NY" required <span class="required"></span>>
+              <option value="New York">New York</option>
+              <option value="AL">Alabama</option>
+              <option value="AK">Alaska</option>
+              <option value="AZ">Arizona</option>
+              <option value="AR">Arkansas</option>
+              <option value="CA">California</option>
+              <option value="CO">Colorado</option>
+              <option value="CT">Connecticut</option>
+              <option value="DE">Delaware</option>
+              <option value="DC">District of Columbia</option>
+              <option value="FL">Florida</option>
+              <option value="GA">Georgia</option>
+              <option value="HI">Hawaii</option>
+              <option value="ID">Idaho</option>
+              <option value="IL">Illinois</option>
+              <option value="IN">Indiana</option>
+              <option value="IA">Iowa</option>
+              <option value="KS">Kansas</option>
+              <option value="KY">Kentucky</option>
+              <option value="LA">Louisiana</option>
+              <option value="ME">Maine</option>
+              <option value="MD">Maryland</option>
+              <option value="MA">Massachusetts</option>
+              <option value="MI">Michigan</option>
+              <option value="MN">Minnesota</option>
+              <option value="MS">Mississippi</option>
+              <option value="MO">Missouri</option>
+              <option value="MT">Montana</option>
+              <option value="NE">Nebraska</option>
+              <option value="NV">Nevada</option>
+              <option value="NH">New Hampshire</option>
+              <option value="NJ">New Jersey</option>
+              <option value="NM">New Mexico</option>
+              <option value="NY">New York</option>
+              <option value="NC">North Carolina</option>
+              <option value="ND">North Dakota</option>
+              <option value="OH">Ohio</option>
+              <option value="OK">Oklahoma</option>
+              <option value="OR">Oregon</option>
+              <option value="PA">Pennsylvania</option>
+              <option value="PR">Puerto Rico</option>
+              <option value="RI">Rhode Island</option>
+              <option value="SC">South Carolina</option>
+              <option value="SD">South Dakota</option>
+              <option value="TN">Tennessee</option>
+              <option value="TX">Texas</option>
+              <option value="UT">Utah</option>
+              <option value="VT">Vermont</option>
+              <option value="VA">Virginia</option>
+              <option value="WA">Washington</option>
+              <option value="WV">West Virginia</option>
+              <option value="WI">Wisconsin</option>
+              <option value="WY">Wyoming</option>
+              <option value="AA">Armed Forces (the) Americas</option>
+              <option value="AE">Armed Forces Europe</option>
+              <option value="AP">Armed Forces Pacific</option>
+              <option value="APO">Army Post Office (U.S. Army and U.S. Air Force)</option>
+              <option value="FPO">Fleet Post Office (U.S. Navy and U.S. Marine Corps)</option>
+            </select>
+            <label for="lname">State<span class="required"></span></label>
+
+            <select id="country" name="country" required <span class="required"></span>>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+
+            <label for="country">Country<span class="required"></span></label>
+            <input type="text" id="zip" pattern="\d{5}([\-]\d{4})?" name="zip" placeholder="Your Zip.." required>
+            <label for="fname">Zip Code<span class="required"></span></label>
+
+
+            <p>Birthday<span class="required"></span></p><br>
+            <input type="date" id="date" required>
+
+
+            <p>Gender<span class="required"></span></p>
+            <label class="contain">
+              <input type="radio" name="gender" id="gender" value="male" required> Male<br>
+              <input type="radio" name="gender" id="gender" required> Female<br></label>
+
+            <p>
+              Are you a U.S. citizen?<span class="required"></span>
+            </p>
+            <label class="switch">
+              <input type="checkbox" required>
+              <span class="slide round"></span>
+            </label>
+        </div>
+        </fieldset>
+
+
+        <div class="box">
+          <fieldset id="infostudent">
+            <legend>
+              <h3>
+                Course Information:</h3>
+            </legend>
+            <div class="status">
+
+              <p>High school courses<span class="required"></span></p>
+              <div class="row">
+                <select class="school">
+                  <optgroup label="English" required>
+                    <option value="">English</option>
+                    <option value="">Literature</option>
+                  </optgroup>
+                  <optgroup label="Life Science" required>
+                    <option value="mercedes">Biology</option>
+                    <option value="audi">Geography</option>
+                  </optgroup>
+                  <optgroup label="Foreigh Languages" required>
+                    <option value="Physics">French</option>
+                    <option value="Chemistry">Italian</option>
+                  </optgroup>
+                </select>
+                <select class="school">
+                  <optgroup label="Mathematics" required>
+                    <option value="">Algebra</option>
+                    <option value="">Geometry</option>
+                  </optgroup>
+                  <optgroup label="History / Social Studies" required>
+                    <option value="mercedes">US History</option>
+                    <option value="audi">World History</option>
+                  </optgroup>
+                  <optgroup label="Science">
+                    <option value="Physics">Phisics</option>
+                    <option value="Chemistry">Chemistry</option>
+                  </optgroup>
+                </select>
+                <select class="school">
+                  <optgroup label="Mathematics" required>
+                    <option value="">Algebra</option>
+                    <option value="">Geometry</option>
+                  </optgroup>
+                  <optgroup label="History / Social Studies" required>
+                    <option value="mercedes">US History</option>
+                    <option value="audi">World History</option>
+                  </optgroup>
+                  <optgroup label="Science" required>
+                    <option value="Physics">US History</option>
+                    <option value="Chemistry">World History</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div class="m">
+                <input type="radio" name="course" id="major" value="Statistics" required>Statistics<br>
+                <input type="radio" name="course" id="major" required>Economics <br></div>
+
+
+              <div class="m">
+                <input type="checkbox" name="course" id="major" value="public" >Public Speaking<br>
+                <input type="checkbox" name="course" id="major" >Music<br></div>
+
+
+
+              <div class="m">
+                <textarea name="subject" placeholder="Write classes.." style="height:100px"></textarea>
+
+              </div>
+
+
+              <p>Select Major<span class="required"></span></p>
+              <!-- <div class="multiselect">
+          <div class="selectBox" onclick="showCheckboxes()">
+            <select>
+              <option>Select an option</option>
+            </select>
+            <div class="overSelect"></div>
+          </div> -->
+              <div class="major" id="radioboxes">
+                <input type="radio" name="major" id="major" value="Computer" required>Computer Science<br>
+                <input type="radio" name="major" id="major" required>Computer Information Systems <br>
+                <input type="radio" name="major" id="major" required>Mathematics <br></div>
+
+              <div class="major" id="radioboxes">
+                <input type="checkbox" name="major" id="major" value="Programming" > Programming<br>
+                <input type="checkbox" name="major" id="major" >Multimedia Computing <br>
+                <input type="checkbox" name="major" id="major" >Electrical Engineering<br></div>
+
+
+              <div class="major" id="radioboxes">
+                <input type="radio" name="m" id="major" value="Electromechanical" required>Electromechanical<br>
+                <input type="radio" name="m" id="major" required>Telecommications Technologies<br>
+                <input type="radio" name="m" id="major" required>Mathematics </div>
+
+              <p>
+                Select First Semester:
+              </p>
+
+              <select class="school">
+                <optgroup label="Mathematics">
+                  <option value="">Algebra</option>
+                  <option value="">Geometry</option>
+                </optgroup>
+                <optgroup label="History / Social Studies">
+                  <option value="mercedes">US History</option>
+                  <option value="audi">World History</option>
+                </optgroup>
+                <optgroup label="Science">
+                  <option value="Physics">US History</option>
+                  <option value="Chemistry">World History</option>
+                </optgroup>
+              </select>
+
+              <p>
+                Enrollment Status<span class="required"></span>
+              </p><br>
+              <div class="time">
+                <input type="radio" name="gender" id="major" value="Computer" required>Full Time<br>
+                <input type="radio" name="gender" id="major" required>Part Time<br></div>
+
+              <p>Credits per Semester<span class="required"></span></p>
+
+              <div class="slidecontainer">
+                0
+                <input type="range" min="1" max="12" value="1" step="1"class="slider" id="myRange" />
+                12
+                <p class="credit">Credit Selected:<span id="demo"></span></p>
+              </div>
+              <p>
+
+                Select first semester courses</p>
+
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+              <p>
+                Select a file:
+              </p>
+              <input id="browse" type="file" name="myFile" multiple><br><br>
+              <input type="submit" form="application" value="Submit" class="button" onclick="myFunction()">
+              <input type="reset" form="application" value="Reset" class="button">
+
+            </div>
+
+        </div>
+        </fieldset>
+      </form>
+
+    </div>
+  </div>
+</body>
+
+
+<script>
+function myFunction() {
+  alert("Your Form Submitted!");
+}
+  var slider = document.getElementById("myRange");
+  var output = document.getElementById("demo");
+  output.innerHTML = slider.value; // Display the default slider value
+
+  // Update the current slider value (each time you drag the slider handle)
+  slider.oninput = function() {
+    output.innerHTML = this.value;
+  }
+  $("input[required]").parent("label").addClass("required");
+  //one beautiful line of Jquery that's all it takes.
+
+  // var slider = document.getElementById("myRange");
+  // var output = document.getElementById("demo");
+  // output.innerHTML = slider.value;
+  //
+  // slider.oninput = function() {
+  //   output.innerHTML = this.value;
+  // }
+  //
+  // var expanded = false;
+  //
+  // function showCheckboxes() {
+  //   var checkboxes = document.getElementById("radioboxes");
+  //   if (!expanded) {
+  //     checkboxes.style.display = "block";
+  //     expanded = true;
+  //   } else {
+  //     checkboxes.style.display = "none";
+  //     expanded = false;
+  //   }
+  // }
+
+  let mainNav = document.getElementById('js-menu');
+  let navBarToggle = document.getElementById('js-navbar-toggle');
+
+  navBarToggle.addEventListener('click', function() {
+    mainNav.classList.toggle('active');
+  });
+
+
+  var modal = document.getElementById('log');
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+</html>
